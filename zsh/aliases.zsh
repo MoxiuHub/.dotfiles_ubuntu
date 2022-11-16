@@ -7,6 +7,7 @@ alias rm="rm -rf"
 alias reload="source ~/.zshrc"
 alias python='python3'
 alias pip='pip3'
+alias acme.sh='~/.acme.sh/acme.sh'
 
 # remix-ide
 alias startremix='/bin/zsh $HOME/scripts/start_remix.sh'

@@ -89,10 +89,10 @@ setlocal define=
 setlocal dictionary=
 setlocal nodiff
 setlocal equalprg=
-setlocal errorformat=%f:\ line\ %l:\ %m,%-G%.%#
+setlocal errorformat=
 setlocal expandtab
-if &filetype != 'zsh'
-setlocal filetype=zsh
+if &filetype != 'sh'
+setlocal filetype=sh
 endif
 setlocal fillchars=
 setlocal fixendofline
@@ -119,14 +119,14 @@ setlocal indentexpr=GetShIndent()
 setlocal indentkeys=0{,0},0),0],!^F,o,O,e,0=then,0=do,0=else,0=elif,0=fi,0=esac,0=done,0=end,),0=;;,0=;&,0=fin,0=fil,0=fip,0=fir,0=fix
 setlocal noinfercase
 setlocal iskeyword=@,48-57,_,192-255
-setlocal keywordprg=:RunHelp
+setlocal keywordprg=
 setlocal linebreak
 setlocal nolisp
 setlocal lispwords=
 setlocal nolist
 setlocal listchars=
 setlocal makeencoding=
-setlocal makeprg=zsh\ -n\ --\ %:S
+setlocal makeprg=
 setlocal matchpairs=(:),{:},[:]
 setlocal nomodeline
 setlocal modifiable
@@ -161,8 +161,8 @@ setlocal statusline=
 setlocal suffixesadd=
 setlocal noswapfile
 setlocal synmaxcol=3000
-if &syntax != 'zsh'
-setlocal syntax=zsh
+if &syntax != 'sh'
+setlocal syntax=sh
 endif
 setlocal tabstop=4
 setlocal tagcase=
@@ -184,21 +184,22 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
-22
+49
 normal! zo
-58
+53
 normal! zo
-59
+57
 normal! zo
-60
+61
 normal! zo
-let s:l = 90 - ((36 * winheight(0) + 18) / 37)
+65
+normal! zo
+let s:l = 79 - ((34 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 90
-normal! 07|
+keepjumps 79
+normal! 0
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 " vim: set ft=vim :
