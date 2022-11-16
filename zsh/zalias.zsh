@@ -4,18 +4,11 @@ alias ....="cd ../../../"
 alias mkdir="mkdir -p"
 alias cp="cp -rf"
 alias rm="rm -rf"
+alias vzsh="vim ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias python='python3'
 alias pip='pip3'
 alias acme.sh='~/.acme.sh/acme.sh'
-
-# remix-ide
-alias startremix='/bin/zsh $HOME/scripts/start_remix.sh'
-alias stopremix='/bin/zsh $HOME/scripts/stop_remix.sh'
-
-# zsh
-alias vzsh="vim ~/.zshrc"
-alias rezsh="source ~/.zshrc"
 
 # grep
 alias cls='tput reset'
