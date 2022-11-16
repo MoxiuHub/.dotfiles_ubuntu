@@ -188,7 +188,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chxuan/vim-edit'
 Plug 'chxuan/prepare-code'
-Plug 'chxuan/vimplus-startify'
+Plug 'MoxiuHub/vimplus-startify'
 Plug 'preservim/tagbar'
 Plug 'Yggdroot/LeaderF'
 Plug 'morhetz/gruvbox'
